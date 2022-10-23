@@ -35,6 +35,16 @@ public class smartCity {
 		Hos.add(new HospitalDetails("Maragadam Hospital","General Medical & Surgical Hospital(Private)","Mandhakarai Villpuram-605602","24 hrs daily","maragadamvpm@gmail.com",225456));
 		Hos.add(new HospitalDetails("Devaki Hospital","Paediatric & Urology (Private)","No:1,chairman chidambaram street, Villpuram-605602","24 hrs daily","devakivpmhos@gmail.com",251023));
 		
+		ArrayList<Colleges_universities> CU = new ArrayList<Colleges_universities>();
+		//Colleges_universities(String name, String address,String email,String website,long contact){
+
+		CU.add(new Colleges_universities("Arignar Anna Government Arts College","Avenue Road, Keezperum Pakkam, Villupuram T.K & DT","vpmgac@gmail.com","http://www.aagacvpm.com",240681) );
+		CU.add(new Colleges_universities("Dr.M.G.R Govt Arts and Science College for Women's","Napalaya Street,Villupuram 605602","vpmmgr@gmail.com","http://www.mgrvpm.com",223858) );
+		CU.add(new Colleges_universities("Government Law College Villupuram ","Old Taulk Office, THiru.vi.ka Street Villupuram","vpmlaw@gmail.com","http://www.vpmlaw.com",227566) );
+		CU.add(new Colleges_universities("University College Of Engineering Tindivannam","Melpakkam College Road Tindivanam T.K \r\n"
+				+"	 Viluppuram District Tamil Nadu - 604001","dean@aucet.com","http://www.aucet.in",238477) );
+		CU.add(new Colleges_universities("University College Of Engineering Villupuram","Kakuppam Villupuram Taluk and District Tamil Nadu 605103","auc@yahoo.com","http://www.aucev.edu.in",224500) );
+
 		int choice, useroption;
 		useroption = 1;
 		Scanner in = new Scanner(System.in);
@@ -47,8 +57,7 @@ public class smartCity {
 			System.out.println("3.CAB SERVICES");
 			System.out.println("4.HOSPITALS");
 			System.out.println("5.BANKS");
-			System.out.println("6.SOPPING MALLS");
-			System.out.println("7.TODAY NEWS");
+			System.out.println("6.COLLEGES/UNIVERSITIES");
 			System.out.println("ENTER YOUR CHOICE : ");
 			choice = in.nextInt();
 			switch (choice) {
@@ -89,7 +98,7 @@ public class smartCity {
 					obj.calculate();
 					obj.display();
 				break;
-			case 5:
+			case 4:
 				System.out.println("");
 				System.out.println("Hospitals in Villupuram");
 				System.out.println("");
@@ -97,13 +106,21 @@ public class smartCity {
 				for(HospitalDetails H : Hos)
 					H.displayHosInfo();
 				break;
-			case 6:
+			case 5:
 				System.out.println("");
 				System.out.println("Banks in Villupuram");
 				System.out.println("");
 
 				for(Bankdetails b : bank)
 					b.displayBankInfo();
+				break;
+			case 6:
+				System.out.println("");
+				System.out.println("COLLEGES AND UNIVERSITIES");
+				System.out.println("");
+				
+				for(Colleges_universities C : CU)
+					C.displayInfo();
 				break;
 			}
 			System.out.println("Enter 1 to home page or 0 to exit"); 
