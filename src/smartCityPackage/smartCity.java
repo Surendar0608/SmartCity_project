@@ -42,9 +42,9 @@ public class smartCity {
 		do {
 			System.out.println("WELCOME TO VILLUPURAM");
 			System.out.println("");
-			System.out.println("1.HOTELS");
-			System.out.println("2.CAB SERVICES");
-			System.out.println("3.AIR TICKET BOOKING");
+			System.out.println("1.ABOUT DISTRICT");
+			System.out.println("2.HOTELS");
+			System.out.println("3.CAB SERVICES");
 			System.out.println("4.HOSPITALS");
 			System.out.println("5.BANKS");
 			System.out.println("6.SOPPING MALLS");
@@ -53,6 +53,13 @@ public class smartCity {
 			choice = in.nextInt();
 			switch (choice) {
 			case 1:
+				System.out.println("");
+				System.out.println("History");
+				System.out.println("");
+				About a=new About();
+				a.history();
+				break;
+			case 2:
 				int userin;
 				do {
 				for (Hotel h : hotels)
@@ -73,7 +80,7 @@ public class smartCity {
 				} while (userin == 1);
 				break;
 
-			case 2:
+			case 3:
 				System.out.println("");
 				System.out.println("CAB SERVICE");
 				System.out.println("");
@@ -82,7 +89,7 @@ public class smartCity {
 					obj.calculate();
 					obj.display();
 				break;
-			case 4:
+			case 5:
 				System.out.println("");
 				System.out.println("Hospitals in Villupuram");
 				System.out.println("");
@@ -90,7 +97,7 @@ public class smartCity {
 				for(HospitalDetails H : Hos)
 					H.displayHosInfo();
 				break;
-			case 5:
+			case 6:
 				System.out.println("");
 				System.out.println("Banks in Villupuram");
 				System.out.println("");

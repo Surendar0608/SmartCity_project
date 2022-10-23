@@ -8,6 +8,8 @@ public CabService() {
 	 car_type = "";
 	 km = 0.0;
 	 bill = 0.0;
+	 Pickup_place="";
+	 Drop_place="";
 }
 public void accept() {
 	Scanner in = new Scanner (System.in);
