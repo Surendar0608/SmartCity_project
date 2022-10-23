@@ -48,8 +48,8 @@ public class smartCity {
 			System.out.println("4.HOSPITALS");
 			System.out.println("5.BANKS");
 			System.out.println("6.SOPPING MALLS");
-			System.out.println("7...");
-			System.out.println("ENT ER YOUR CHOICE : ");
+			System.out.println("7.TODAY NEWS");
+			System.out.println("ENTER YOUR CHOICE : ");
 			choice = in.nextInt();
 			switch (choice) {
 			case 1:

@@ -36,6 +36,7 @@ public void calculate () {
 	}
 }
 public void display () {
+	System.out.println("");
 	System.out.println("PickUp Place: " + Pickup_place );
 	System.out.println("Drop Place: " + Drop_place);
 	System.out.println("Car Type: " + car_type);
